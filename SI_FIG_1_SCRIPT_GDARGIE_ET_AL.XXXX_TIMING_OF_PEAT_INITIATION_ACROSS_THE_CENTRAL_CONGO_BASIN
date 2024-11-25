@@ -1,0 +1,81 @@
+#========================================================================================================#
+##SCRIPT FOR SI FIG. 1 IN DARGIE ET AL. (XXXX), TIMING OF PEAT INITIATION ACROSS THE CENTRAL CONGO BASIN##
+#                                     WRITTEN BY G. DARGIE, NOV. 2024                                    #
+#========================================================================================================#
+
+#NB: USER'S WILL NEED TO SET THEIR OWN WORKING DIRECTORIES
+
+#-----------------------#
+#LOAD REQUIRED LIBRARIES#
+#-----------------------#
+
+library(rbacon)
+
+library(rintcal)
+
+library(shape)
+
+#---------------------------------------------------------------#
+#CREATE A MIXED CURVE OF SOUTHERN AND NORTHERN HEMISPHERE CURVES#
+#---------------------------------------------------------------#
+
+
+new.ccdir="C:/Users/geogcd/Documents/CongoPeat/Labwork/14C/BACON_RUNS/CURVES/" #NOT SURE IF THIS IS NEEDED OR NOT.
+
+mix.ccurves(proportion=0.5, cc1 = "IntCal20", cc2 = "SHCal20", name="mixed.14C",cc.dir ="C:/Users/geogcd/Documents/CongoPeat/Labwork/14C/BACON_RUNS/CURVES", save=TRUE)
+
+#------------------------------------------------------------------------------#
+#CALIBRATE DATES USING BACON AND THIS AUTOMATICALLY PRODUCES AN AGE-DEPTH MODEL#
+#------------------------------------------------------------------------------#
+
+Bacon("IKE1_5.0", coredir="C:/Users/geogcd/Documents/CongoPeat/Labwork/14C/BACON_RUNS/", cc4 ="mixed.14C", cc.dir="C:/Users/geogcd/Documents/CongoPeat/Labwork/14C/BACON_RUNS/CURVES" )
+
+#YOU WILL BE ASKED: "Ballpark estimates suggest changing the prior for acc.mean to 100 yr/cm. OK? (y/N)" I SELECTED "y"
+#YOU WILL THEN BE ASKED: "Run IKE1_5.0 with 79 sections? (Y/n)" I SELECTED "Y"
+
+
+
+
+#----------------------------------------------------------------------#
+#NOW CREATE JUST AN AGE-DEPTH MODEL AND SHOW THE OXCAL CALIBRATED DATES#
+#----------------------------------------------------------------------#
+
+#START BY SETTING WORKING DIRECTORY TO BACON OUTPUT AND ACCESSING DATA
+
+setwd("C:\\Users\\geogcd\\Documents\\CongoPeat\\Labwork\\14C\\BACON_RUNS\\IKE1_5.0")
+BACON_OUTPUT<-read.table("IKE1_5.0_79_ages.txt", header=TRUE)
+
+#START THE PLOT
+par(mar=c(8,8,1,1))
+par(mfrow=c(1,1))
+
+#PLOT BACON MEAN AGE-DEPTH MODEL
+plot(BACON_OUTPUT$mean,BACON_OUTPUT$depth, type="l", lty=3, lwd=2, col="red", ylim=rev(c(0,400)), xlim=c(-100,50000), xlab="", ylab="", axes=FALSE )
+par(new=TRUE)
+
+#PLOT BACON AGE-DEPTH MODEL 95% CIs AS A POLYGON
+polygon(c(BACON_OUTPUT$max, rev(BACON_OUTPUT$min)), c(BACON_OUTPUT$depth, rev(BACON_OUTPUT$depth)), col=rgb(224/255, 224/255, 224/255,0.5), border=rgb(224/255, 224/255, 224/255,0.5))
+par(new=TRUE)
+
+#TO ADD OXCAL DATES, CHANGE WORKING DIRECTORY AND READ IN DATA
+setwd("C:\\Users\\geogcd\\Documents\\CongoPeat\\Labwork\\14C\\clam_runs\\IKE1_5.0_calibrated")
+OXCAL_OUTPUT<-read.csv("IKE1_5.0_DOWN_CORE_OXCAL_OUTPUT.csv", header=TRUE)
+
+#PLOT THE OXCAL DATES
+plot(OXCAL_OUTPUT$Median, OXCAL_OUTPUT$Depth, ylim=rev(c(0,400)), xlim=c(-100,50000), lwd=2, xlab="", ylab="", pch=19, cex=2, col="black", axes=FALSE)
+par(new=TRUE)
+
+#ADD ARROWS
+arrows(x0=OXCAL_OUTPUT$CI95_Min, y0=OXCAL_OUTPUT$Depth, x1=OXCAL_OUTPUT$CI95_Max, y1=OXCAL_OUTPUT$Depth, code=3, arr.type="T", length=0.2, angle=90, lwd=2)
+
+#ADD AXES AND LABELS
+axis(1, at=c(0,10000,20000,30000,40000,50000), labels=c("0","10","20","30","40","50"), las=1, cex.axis=2) 
+axis(2, at=c(0,100,200,300,400), labels=c("0","100","200","300","400"), las=1, cex.axis=2)
+mtext("Depth Down Core (cm)", line = 5, side=2, cex=2)
+mtext("Time (k cal yrs BP)", line = 5, side=1, cex=2)
+
+
+
+#-------------------#
+####END OF SCRIPT####
+#-------------------#
