@@ -31,9 +31,9 @@ This file contains the OxCal output for peat core IKE1_5.0, plotted in SI Figure
 Columns contain the following:
 
 **Sample:** This is the unique sample identifier. This is the same as the "Sample Publication Code" in Table 1 of the article.\
-**median:** This is the median calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
-**CI95_MIN:** This is the lower 95%, or 2-sigma, confidence interval calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
-**CI95_MAX:** This is the upper 95%, or 2-sigma, confidence interval calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
+**Median:** This is the median calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
+**CI95_Min:** This is the lower 95%, or 2-sigma, confidence interval calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
+**CI95_Max:** This is the upper 95%, or 2-sigma, confidence interval calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
 **Depth:** This is the mean depth of the sample. The samples were 10 cm thick. So if a sample was from 200-210 cm, we list the depth here as 205 cm. Surface is set to zero.
 
 
