@@ -33,7 +33,7 @@ dd
 
 delta
 
-$$dd$$
+&delta
 
 
 
