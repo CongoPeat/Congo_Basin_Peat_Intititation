@@ -33,7 +33,7 @@ dd
 
 delta
 
-&delta
+&delta;
 
 &#0394;
 
