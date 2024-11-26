@@ -22,7 +22,7 @@ Columns contain the following:
 
 **Depth (cm):** This is the sample depth in centimeters.\
 **Foram age (cal. yrs BP):** This is the calibrated planktic foraminifera radiocarbon age (calibrated year Before Present).\
-**d18O Standard (PDB):** d
+**d18O Standard (PDB):** This is &delta; 18O of the standard Vienna Pee Dee Belemnite.\
 **UK37' SST:**
 **d18Owater Temp. Corrected:**
 **Ice Correcttion Factor:**
