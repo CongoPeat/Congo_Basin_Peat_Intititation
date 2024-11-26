@@ -13,6 +13,30 @@ This file contains the R code used to produce SI Figure 1. Users will also requi
 
 # Data
 
+
+## Figure 1 data
+### Core_GeoB6518-1_delta18O_data.csv metadata
+Ths file contains the extended planktic foraminifera δ18O data from marine core GeoB6518-1 presented in Figure 1 of the article.
+
+Columns contain the following:
+
+**Depth (cm):** This is the sample depth in centimeters.\
+**Foram age (cal. yrs BP):** This is the calibrated planktic foraminifera radiocarbon age (calibrated year Before Present).\
+**d18O Standard (PDB):** d
+**UK37' SST:**
+**d18Owater Temp. Corrected:**
+**Ice Correcttion Factor:**
+**d18Owater Ice Corrected:**
+
+
+dd
+
+delta
+
+$$dd$$
+
+
+
 ## SI Figure 1 data
 ### IKE1_5.0.csv metadata
 This file contains the raw data required for the Bacon age-depth model.
