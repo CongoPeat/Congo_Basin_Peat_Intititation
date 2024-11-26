@@ -23,25 +23,10 @@ Columns contain the following:
 **Depth (cm):** This is the sample depth in centimeters.\
 **Foram age (cal. yrs BP):** This is the calibrated planktic foraminifera radiocarbon age (calibrated year Before Present).\
 **d18O Standard (PDB):** This is &delta;<sup>18</sup>O of the standard Vienna Pee Dee Belemnite.\
-**UK37' SST:** This is the U<sup>K</sup><sub>37</sub>’ alkenone-derived sea-surface temperatures (^\circ
-
-&ordm;
-
-**d18Owater Temp. Corrected:**
-**Ice Correcttion Factor:**
-**d18Owater Ice Corrected:**
-
-
-dd
-
-delta
-
-&delta;
-
-&#0394;
-
-&psi;
-&#968; 
+**UK37' SST:** This is the alkenone-derived sea-surface temperatures (&ordm;C).\
+**d18Owater Temp. Corrected:** This is &delta;<sup>18</sup>O record of surface waters of the Congo plum after correcting for sea-surface temperatures.\
+**Ice Correcttion Factor:** \
+**d18Owater Ice Corrected:** This is &delta;<sup>18</sup>O temperature corrected record of surface waters of the Congo plum after correcting for continental ice mass.
 
 
 
