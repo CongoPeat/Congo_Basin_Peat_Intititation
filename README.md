@@ -8,13 +8,30 @@ Dargie et al. (XXXX). Timing of peat initiation across the central Congo Basin. 
 Please cite this paper if you're using any of the data or code presented here.
 
 # Code
+
+## Oxcal_Summed_Probability_Distribution_Code
+This file contains the OxCal code used to produce the summed probability distributions of the basal radiocarbon dates shown in Figure 1 and SI Figure 2.
+
+
+
 ## SI_FIG_1_SCRIPT_GDARGIE_ET_AL.XXXX_TIMING_OF_PEAT_INITIATION_ACROSS_THE_CENTRAL_CONGO_BASIN
 This file contains the R code used to produce SI Figure 1. Users will also require the following data files: "IKE1_5.0.csv" and "IKE1_5.0_DOWN_CORE_OXCAL_OUTPUT.csv"
 
+
+
+
 # Data
 
-
 ## Figure 1 data
+### Summed_Probability_Distributions_All_Basal_Dates
+This file contains the combined summed probability distribution of all 52 basal dates presented in Figure 1 of the article.
+
+Columns contain the following:
+
+**sum_prob_cal_date_100:** This is the calibrated radiocarbon date 100-year bin (calibrated years Before Present).\
+**sum_prob:** This is the combined summed probability distribution of the 52 basal dates.
+
+
 ### Core_GeoB6518-1_delta18O_data.csv metadata
 Ths file contains the extended planktic foraminifera δ18O data from marine core GeoB6518-1 presented in Figure 1 of the article.
 
@@ -42,6 +59,7 @@ Columns contain the following:
 **depth:** This is the mean depth of the sample. The samples were 10 cm thick. So if a sample was from 200-210 cm, we list the depth here as 205 cm. Surface is set to zero.\
 **cc:** This is the calibration curve to be used. 4=the mixed northern-southern hemisphere curve created in the corresponding R script. 0=dates are already calibrated.
 
+
 ### IKE1_5.0_DOWN_CORE_OXCAL_OUTPUT.csv
 This file contains the OxCal output for peat core IKE1_5.0, plotted in SI Figure 1.
 
@@ -53,9 +71,21 @@ Columns contain the following:
 **CI95_Max:** This is the upper 95%, or 2-sigma, confidence interval calibrated radiocarbon age, in calibrated years Before Present, calculated in OxCal using a 50:50 northern-southern hemisphere calibration curve.\
 **Depth:** This is the mean depth of the sample. The samples were 10 cm thick. So if a sample was from 200-210 cm, we list the depth here as 205 cm. Surface is set to zero.
 
+
+
 ### IKE1_5.0_DOWN_CORE_DATES_TABLE
 This table presents information on the down core radiocarbon dates for peat core IKE1_5.0, in the same format as Table 1 in the publication.
 
 
+
+## SI Figure 2 data
+### Summed_Probability_Distributions_Individual_Basal_Dates
+This file contains the individual core summed probability distributions presented in SI Figure 2.
+
+Columns contain the following:
+
+**core:** This is the core code.\
+**sum_prob_cal_date_100:** This is the calibrated radiocarbon date 100-year bin (calibrated years Before Present).\
+**sum_prob:** This is the summed probability distribution of the 52 individual basal dates.
 
 
