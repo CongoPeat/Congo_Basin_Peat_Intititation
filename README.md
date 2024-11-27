@@ -25,7 +25,7 @@ Columns contain the following:
 **d18O Standard (PDB):** This is &delta;<sup>18</sup>O of the standard Vienna Pee Dee Belemnite.\
 **UK37' SST:** This is the alkenone-derived sea-surface temperatures (&ordm;C).\
 **d18Owater Temp. Corrected:** This is &delta;<sup>18</sup>O record of surface waters of the Congo plum after correcting for sea-surface temperatures.\
-**Ice Correcttion Factor:** \
+**Ice Correction Factor:** \
 **d18Owater Ice Corrected:** This is &delta;<sup>18</sup>O temperature corrected record of surface waters of the Congo plum after correcting for continental ice mass.
 
 
