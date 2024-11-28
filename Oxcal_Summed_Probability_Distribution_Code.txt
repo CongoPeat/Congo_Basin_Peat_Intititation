@@ -1,0 +1,74 @@
+#===========================================================#
+#  SUMMED PROBABILITY DISTRIBUTION CODE FOR USE WITH OXCAL  #
+#===========================================================#
+
+#THE FOLLOWING CODE CAN BE RUN WITHIN OXCAL TO PRODUCE THE SUMMED PROBABILITY DISTRIBUTION OF THE BASAL DATES.
+#ONCE THE CODE HAS RUN, USERS CAN DOWNLOAD THE SUMMED PROBABILITY DISTRIBUTION DATA FROM WITHIN THE OXCAL OUTPUT WINDOW BY GOING TO "VIEW>RAW DATA" AND THEN DOWNLOADING THE UNMODELLED DATA.
+#FOR INDIVIDUAL DATE SUMMED PROBABILITY DISTRIBUTIONS IT IS THE SAME CODE, BUT REMOVING THE OTHER DATES WHICH ARE NOT OF INTEREST.
+
+
+Options()
+ {
+  Resolution=100;
+ };
+ Plot()
+ {
+  Sum()
+  {
+Curve("SHCal20","SHCal20.14c");
+Curve("IntCal20","IntCal20.14c");
+Mix_Curves("Mixed","SHCal20","IntCal20",U(0,100));
+   R_Date("IKE1_1.0",8124,39);
+   R_Date("IKE1_3.0",18597,85);
+   R_Date("IKE1_5.0",38050,917);
+   R_Date("LOK5_1.0",9497,39);
+   R_Date("LOK5_3.0",8429,40);
+   R_Date("LOK5_5.0",9285,42);
+   R_Date("BNG1_4.00P",22886,140);
+   R_Date("BDM1_1.00P",7022,39);
+   R_Date("BDM1_3.00P",9492,42);
+   R_Date("BDM1_5.00P",14610,57);
+   R_Date("BDM1_7.00P",15980,65);
+   R_Date("CEN_12.00",12299,47);
+   R_Date("CEN_20.00",15216,59);
+   R_Date("CEN_4.00",11277,44);
+   R_Date("CEN_8.00",11259,45);
+   R_Date("EKG02",6333,39);
+   R_Date("EKG03",8802,40);
+   R_Date("KM7",9704,42);
+   R_Date("BEL1_3.00",18625,85);
+   R_Date("PEK1_10.00P1",31806,422);
+   R_Date("TUM1_1.00",2571,37);
+   R_Date("CEN_17.4",14050,55);
+   R_Date("BDK_6.0",7352,38);
+   R_Date("BZB_6.0",6817,39);
+   R_Date("SPT_0.0",9340,41);
+   R_Date("SPT_2.0",9091,39);
+   R_Date("SPT_5.0",8484,41);
+   R_Date("EKZ_5.0",2147,35);
+   R_Date("ITG_6.0",8575,46);
+   R_Date("TTO_22",6239,39);
+   R_Date("MBL_6.0",7765,38);
+   R_Date("BBT_8.00",24060,163);
+   R_Date("OSG_01_SP1",13515,52);
+   R_Date("BOB_LAC",9629,41);
+   R_Date("BOB1_11.00P",7151,39);
+   R_Date("BOB1_6.00P",1330,35);
+   R_Date("BNG1_1.00P",12066,47);
+   R_Date("BNG1_3.00P",12319,49);
+   R_Date("BNG1_6.00P",17546,80);
+   R_Date("EKZ_2.00",1865,37);
+   R_Date("EKZ_3.00",1747,37);
+   R_Date("EKZ_4.00",1110,37);
+   R_Date("IPB_6.00P2",2244,35);
+   R_Date("ITG_0.0",370,35);
+   R_Date("ITG_2.0",1415,35);
+   R_Date("ITG_3.0",4458,36);
+   R_Date("ITG_4.0",6691,38);
+   R_Date("ITG_5.0",7453,39);
+   R_Date("LBK_6.00P1",3128,35);
+   R_Date("BOB_9.00P1",11483,46);
+   R_Date("OTS_1.30P",18696,86);
+   R_Date("BBT_5.00P",26692,223);
+  };
+ };
