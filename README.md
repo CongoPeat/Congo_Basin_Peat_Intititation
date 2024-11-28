@@ -32,7 +32,7 @@ Columns contain the following:
 **sum_prob:** This is the combined summed probability distribution of the 52 basal dates.
 
 
-### Core_GeoB6518-1_delta18O_data.csv metadata
+### Core_GeoB6518-1_delta18O_data.csv
 Ths file contains the extended planktic foraminifera δ18O data from marine core GeoB6518-1 presented in Figure 1 of the article.
 
 Columns contain the following:
@@ -48,7 +48,7 @@ Columns contain the following:
 
 
 ## SI Figure 1 data
-### IKE1_5.0.csv metadata
+### IKE1_5.0.csv
 This file contains the raw data required for the Bacon age-depth model.
 
 Columns contain the following:
