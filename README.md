@@ -37,13 +37,13 @@ Ths file contains the extended planktic foraminifera δ18O data from marine core
 
 Columns contain the following:
 
-**Depth (cm):** This is the sample depth in centimeters.\
-**Foram age (cal. yrs BP):** This is the calibrated planktic foraminifera radiocarbon age (calibrated year Before Present).\
-**d18O Standard (PDB):** This is &delta;<sup>18</sup>O of the standard Vienna Pee Dee Belemnite.\
-**UK37' SST:** This is the alkenone-derived sea-surface temperatures (&ordm;C).\
-**d18Owater Temp. Corrected:** This is &delta;<sup>18</sup>O record of surface waters of the Congo plum after correcting for sea-surface temperatures.\
-**Ice Correction Factor:** \
-**d18Owater Ice Corrected:** This is &delta;<sup>18</sup>O temperature corrected record of surface waters of the Congo plum after correcting for continental ice mass.
+**Depth (cm):** This is the sample depth in the sediment core in centimeters.\
+**Foram age (cal. yrs BP):** This is the calculated age of the sediment based on calibration of radiocarbon ages from planktic foraminifera (before present meaning before 1950).\
+**d18O G. ruber (VPDB):** This is the measured &delta;<sup>18</sup>O of the planktic foraminifera Globigerinoides ruber in permille against the Vienna PeeDee Belemnite standard.\
+**UK37' SST:** This is the alkenone-derived sea-surface temperature (&ordm;C) of the sample.\
+**d18Owater Temp. Corrected:** This is the calculated seawater &delta;<sup>18</sup>O composition taking into account the temperature-dependent isotope fractionation between seawater and carbonate (in permille VPDB) after Mulitza et al. (2003).\
+**Ice-effect on d18Oseawater (VPDB):** This is the calculated ice-effect on &delta;<sup>18</sup>O seawater (in permille VPDB), based on the ages of the samples, after Bintanja et al. (2005).\
+**d18Oseawater, ice-corrected (VPDB)**: This is &delta;<sup>18</sup>O seawater corrected for the ice-effect (in permille VPDB), reflecting isotopic changes in the surface waters of the Congo freshwater plume due to discharge changes.
 
 
 
