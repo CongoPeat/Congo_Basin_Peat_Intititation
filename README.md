@@ -10,11 +10,11 @@ Please cite this paper if you're using any of the data or code presented here.
 # Code
 
 ## Oxcal_Summed_Probability_Distribution_Code
-This file contains the OxCal code used to produce the summed probability distributions of the basal radiocarbon dates shown in Figure 1 and SI Figure 2.
+This file contains the OxCal code used to produce the summed probability distributions of the basal radiocarbon dates shown in Figure 2 and SI Figure 1.
 
 
 
-## SI_FIG_1_SCRIPT_GDARGIE_ET_AL.XXXX_TIMING_OF_PEAT_INITIATION_ACROSS_THE_CENTRAL_CONGO_BASIN
+## SI_FIG_2_SCRIPT_GDARGIE_ET_AL.XXXX_TIMING_OF_PEAT_INITIATION_ACROSS_THE_CENTRAL_CONGO_BASIN
 This file contains the R code used to produce SI Figure 1. Users will also require the following data files: "IKE1_5.0.csv" and "IKE1_5.0_DOWN_CORE_OXCAL_OUTPUT.csv"
 
 
@@ -22,9 +22,9 @@ This file contains the R code used to produce SI Figure 1. Users will also requi
 
 # Data
 
-## Figure 1 data
+## Figure 2 data
 ### Summed_Probability_Distributions_All_Basal_Dates
-This file contains the combined summed probability distribution of all 52 basal dates presented in Figure 1 of the article.
+This file contains the combined summed probability distribution of all 52 basal dates presented in Figure 2 of the article.
 
 Columns contain the following:
 
@@ -47,7 +47,23 @@ Columns contain the following:
 
 
 
-## SI Figure 1 data
+## Figure 3 data
+### Lateral_Expansion_Rates.csv
+Ths file contains the apparent lateral expansion rates displayed in figure 3.
+
+Columns contain the following:
+
+**Transect:** This is the name of the transect of which the paired cores belong to.\
+**Core Code:** This is the core code, as presented in Table 1 of the article.\
+**Core Median Age (cal yrs BP):** This is the median age of the core in calibrated years Before Present, as presented in Table 1.\
+**Nearest Core Code:** This is the core code of the nearest adjacent core, which was used to calculate the lateral expansion rate.\
+**Distance to Nearest Core (m):** This is the distance in meters between the pair of cores, used to calculate the apparent lateral expansion rate.\
+**Age Difference Between Cores (years):** This is the age difference in years between the pair of cores, used to calculate the apparent lateral expansion rate.\
+**Expansion Rate (m yr-1):** This is the apparent lateral expansion rate for the pair of cores in meters per year.
+
+
+
+## SI Figure 2 data
 ### IKE1_5.0.csv
 This file contains the raw data required for the Bacon age-depth model.
 
@@ -78,7 +94,7 @@ This table presents information on the down core radiocarbon dates for peat core
 
 
 
-## SI Figure 2 data
+## SI Figure 1 data
 ### Summed_Probability_Distributions_Individual_Basal_Dates
 This file contains the individual core summed probability distributions presented in SI Figure 2.
 
