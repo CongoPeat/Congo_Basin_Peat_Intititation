@@ -63,6 +63,17 @@ Columns contain the following:
 
 
 
+## Figure 4 data
+### Congo_long_profile.csv
+This file contains elevation data of the Congo River shown in Figure 4.
+
+Columns contain the following:
+
+**Distance from coast (meters):** This is the distance, in meters, from the coast as you move up the Congo River.\
+**Elevation above sea level (meters):** This is the elevation of the Congo River at said distance from the coast, in meters above sea level, as determined from the Forest And Buildings removed Copernicus Digital Elevation Model (FABDEM) (available at: https://data.bris.ac.uk/data/dataset/s5hqmjcdj8yo2ibzi9b4ew3sn).
+
+
+
 ## SI Figure 2 data
 ### IKE1_5.0.csv
 This file contains the raw data required for the Bacon age-depth model.
